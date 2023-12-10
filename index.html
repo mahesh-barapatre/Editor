@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing tool</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css"> 
+</head>  
+<body>
+    <div class="wrapper">
+        <div class="header"> 
+            <button id="redo">redo</button>
+            <button id="undo">undo</button>   
+        </div>
+        <div id="sheet">
+            <div id="draggable" draggable="true">
+                ADD TEXT
+            </div>
+    
+        </div>
+        <div class="options">
+            <div class="optn">
+    <label for="font">Font</label>
+    <input type="text" id="font" list="fontList" placeholder="Type or select a font">
+    <datalist id="fontList">
+      
+    </datalist>
+</div>
+            <div class="colorpicker"> 
+                <h5>color picker:</h5>
+                <input type="color"
+                id="colorPicker" value="#000000">
+            </div>
+            <div class="optn">
+                <div for="size">size</div> 
+                <input value="32" type="number" name="size" id="size">
+            </div>
+            <button id="add">ADD Text</button>
+    
+        </div>
+    </div>
+</body>
+</html>

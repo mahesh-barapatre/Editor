@@ -1,0 +1,138 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+background: linear-gradient(180deg, #844af1, #2ab1ff);
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+    
+}
+
+#sheet{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    opacity: 80%;
+    padding: 5%;
+    overflow: hidden;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:active {
+  background-color: #1f618d;
+}
+
+
+#draggable{
+    position: absolute;
+    border: dotted;
+    border-width: 2px;
+    padding: 2%;
+    margin: 2%;
+    display: inline;
+    font-size: 32px;
+}
+
+.colorpicker {
+  text-align: center;
+  margin: 20px;
+}
+
+.colorpicker h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.colorpicker input[type="color"] {
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.optn {
+  margin: 20px;
+  text-align: center;
+}
+
+.optn label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.optn input[type="text"] {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.optn input[type="text"]::-ms-expand {
+  display: none;
+}
+
+.optn input[type="text"]::after {
+  content: '\25BC'; 
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+#fontList option {
+  font-family: 'Poppins', sans-serif; 
+}
+
+.optn {
+  margin: 20px;
+  text-align: center;
+}
+
+.optn div {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.optn input[type="number"] {
+  width: 100px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
